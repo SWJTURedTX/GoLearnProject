@@ -7,14 +7,15 @@ import (
 type circle struct {
 	radius float64
 }
-func nums()(int, int, string) {
+
+func nums() (int, int, string) {
 	a, b, c := 1, 2, "1"
 	return a, b, c
 }
 
 func add(base int) func(int) *int {
 
-	fmt.Printf("%p\n", &base)  //打印变量地址，可以看出来 内部函数时对外部传入参数的引用
+	fmt.Printf("%p\n", &base) //打印变量地址，可以看出来 内部函数时对外部传入参数的引用
 
 	f := func(i int) *int {
 		fmt.Printf("%p\n", &base)
@@ -37,15 +38,16 @@ func reDefind(nums *[3]int) {
 	nums[1] = 1
 }
 
-func deleteNum(nums []int, i int) []int{
-	copy(nums[i:], nums[i + 1:])
-	return nums[:len(nums) - 1]
+func deleteNum(nums []int, i int) []int {
+	copy(nums[i:], nums[i+1:])
+	return nums[:len(nums)-1]
 }
-func main(){
+func main() {
 
 	q := [...]int{1, 2, 3}
 	reDefind(&q)
 	fmt.Println(q)
+	//branchtest
 	//fmt.Printf(fmt.Sprintf("%d", 123))
 	//int string转换
 	//strconv.FormatInt(123, 10)
@@ -97,7 +99,5 @@ func main(){
 	}
 
 	fmt.Println(int32(testMap["a"]))*/
-
-
 
 }

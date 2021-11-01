@@ -39,14 +39,16 @@ func reDefind(nums *[3]int) {
 }
 
 func deleteNum(nums []int, i int) []int {
+	defer comma("123")
 	copy(nums[i:], nums[i+1:])
 	return nums[:len(nums)-1]
 }
 func main() {
 
-	q := [...]int{1, 2, 3}
-	reDefind(&q)
-	fmt.Println(q)
+	//flag.Duration("period", time.Second, "sleep period")
+	//q := [...]int{1, 2, 3}
+	//reDefind(&q)
+	//fmt.Println(q)
 	//branchtest
 	//fmt.Printf(fmt.Sprintf("%d", 123))
 	//int string转换

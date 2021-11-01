@@ -46,7 +46,7 @@ func main() {
 
 	q := [...]int{1, 2, 3}
 	reDefind(&q)
-	fmt.Println(q)
+	//fmt.Println(q)
 	//branchtest
 	//fmt.Printf(fmt.Sprintf("%d", 123))
 	//int string转换

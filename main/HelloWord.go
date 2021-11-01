@@ -45,6 +45,7 @@ func deleteNum(nums []int, i int) []int {
 }
 func main() {
 
+	//
 	//flag.Duration("period", time.Second, "sleep period")
 	//q := [...]int{1, 2, 3}
 	//reDefind(&q)
